@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(cookieParser())
 
 const corsoption={
-    origin: 'http://localhost:5173',
+    origin: 'https://job-portal-guzu.onrender.com',
     credentials: true
 }
 app.use(cors(corsoption)) 
