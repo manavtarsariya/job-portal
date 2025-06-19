@@ -46,8 +46,7 @@ export const getAlljobs = async (req, res) => {
         const keyword = req.query.keyword || "";
         const query = {
             $or: [
-                { title: { $regex: keyword, $options: "i" } },
-                { description: { $regex: keyword, $options: "i" } }
+                { title: { $regex: keyword, $options: "i" } }
             ]
         };
 
@@ -125,7 +124,7 @@ export const getAdminJobs = async (req, res) => {
 
 export const DeleteAdminJob = async (req, res) => {
     try {
-  
+
         const jobId = req.params.id;
 
         // Find the job to ensure it exists before deletion
