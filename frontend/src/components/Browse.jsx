@@ -16,11 +16,11 @@ import Footer from './shared/Footer';
 
 const Browse = () => {
     // const alljobs = []
+    useGetAllJobs()
+
     const { alljobs } = useSelector(store => store.job);
     const dispatch = useDispatch()
 
-
-    useGetAllJobs()
 
     useEffect(() => {
         dispatch(setsearchedQuery(""))
