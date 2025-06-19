@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Job from './Jobcard';
 import Navbar from './shared/Navbar';
 import Filtercard from './FilterCard';
-import {  useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import useGetAllJobs from './hooks/useGetAllJobs';
 import { Button } from './ui/button';
 import { FlipHorizontal, FlipHorizontal2, FoldHorizontal, GripHorizontal, LineChartIcon, LucideFlipHorizontal, LucideThermometer, MenuIcon, Minimize, MoreHorizontalIcon, MoveRight, ScanLine } from 'lucide-react';
@@ -101,7 +101,7 @@ const Jobs = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
