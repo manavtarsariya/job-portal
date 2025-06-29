@@ -133,6 +133,7 @@ const PostJob = () => {
                                 <Input
                                     className="max-sm:mt-2 p-2 border rounded focus:outline-none focus:ring focus:ring-blue-300"
                                     type="number"
+                                    min="0"
                                     name="salary"
                                     placeholder="Please Enter a Salary (in LPA)"
                                     value={input.salary}
