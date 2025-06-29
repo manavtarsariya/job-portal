@@ -132,7 +132,7 @@ const PostJob = () => {
                                 <Label htmlFor="salary" className={`w-40`}>Salary</Label>
                                 <Input
                                     className="max-sm:mt-2 p-2 border rounded focus:outline-none focus:ring focus:ring-blue-300"
-                                    type="text"
+                                    type="number"
                                     name="salary"
                                     placeholder="Please Enter a Salary (in LPA)"
                                     value={input.salary}
@@ -165,7 +165,8 @@ const PostJob = () => {
                                 <Label htmlFor="experience" className={`w-40`}>Experience Level</Label>
                                 <Input
                                     className="max-sm:mt-2 p-2 border rounded focus:outline-none focus:ring focus:ring-blue-300"
-                                    type="text"
+                                   type="number"
+                                    min="0"
                                     name="experience"
                                     placeholder="Please Enter The Experience"
                                     value={input.experience}
