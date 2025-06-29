@@ -50,7 +50,7 @@ const LatestJobCards = ({ job }) => {
                             <Building2 className="w-4 h-3.5   text-gray-600 group-hover:text-blue-600 transition-colors duration-300" />
 
                             <h1 className="font-semibold  text-lg text-gray-900 group-hover:text-blue-700 transition-colors duration-300">
-                                {job?.company.name}
+                                {job?.company?.name}
                             </h1>
                         </div>
                         <div className="flex items-center gap-1 text-gray-500">
